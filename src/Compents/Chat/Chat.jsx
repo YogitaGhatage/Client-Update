@@ -8,7 +8,7 @@ import OTPAuth from './OTPAuth';
 
 
 const sendMessageAPI = async (message) => {
-  const res = await axios.post('https://project-res3.onrender.com', { message });
+  const res = await axios.post('https://stackoverflow-backendagain-9zxt.onrender.com/ask', { message });
   return res.data;
 };
 

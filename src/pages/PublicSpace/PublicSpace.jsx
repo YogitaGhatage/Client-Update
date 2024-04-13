@@ -70,7 +70,7 @@ function PublicSpace() {
     formData.append('pdf', content.pdf);
 
     try {
-      const response = await axios.post('https://project-res3.onrender.com', formData, {
+      const response = await axios.post('https://stackoverflow-backendagain-9zxt.onrender.com/api/share', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -88,7 +88,7 @@ function PublicSpace() {
   useEffect(() => {
     const fetchSharedContent = async () => {
       try {
-        const response = await axios.get('https://project-res3.onrender.com');
+        const response = await axios.get('https://stackoverflow-backendagain-9zxt.onrender.com/api/content');
         setSharedContent(response.data);
       } catch (error) {
         console.error(error);
@@ -153,14 +153,14 @@ function PublicSpace() {
       <div>
         <h2>Shared Content</h2>
         {sharedContent.map((item, index) => (
-          <div key={index}>
-            {item.text && <p>{item.text}</p>}
-            {item.image && <img src={`https://project-res3.onrender.com${item.image}`} alt="Shared" />}
-            {item.video && <video src={`https://project-res3.onrender.com${item.video}`} controls  />}
-            {item.audio && <audio src={`https://project-res3.onrender.com${item.audio}`} controls />}
-      {item.pdf && <a href={`https://project-res3.onrender.com${item.pdf}`} target="_blank" rel="noopener noreferrer">View PDF</a>}
-             </div>
-        ))}
+  <div key={index}>
+    {item.text && <p>{item.text}</p>}
+    {item.image && <img src={`https://stackoverflow-backendagain-9zxt.onrender.com/uploads/${item.image}`} alt="Shared" />}
+    {item.video && <video src={`https://stackoverflow-backendagain-9zxt.onrender.com/uploads/${item.video}`} controls />}
+    {item.audio && <audio src={`https://stackoverflow-backendagain-9zxt.onrender.com/uploads/${item.audio}`} controls />}
+    {item.pdf && <a href={`https://stackoverflow-backendagain-9zxt.onrender.com/uploads/${item.pdf}`} target="_blank" rel="noopener noreferrer">View PDF</a>}
+  </div>
+))}
       </div>
     </div>
   );

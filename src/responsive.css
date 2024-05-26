@@ -1,0 +1,128 @@
+/* responsive.css */
+
+/* Small screens */
+@media (max-width: 767.98px) {
+    .home-container-1 {
+      flex-direction: column;
+    }
+  
+    .home-container-2 {
+      width: 100%;
+    }
+  
+    .left-sidebar {
+      width: 100%;
+    }
+  
+    .right-sidebar {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    /* Navbar */
+    .main-nav {
+      width: 100%;
+      padding: 0 10px;
+    }
+  
+    .navbar {
+      flex-wrap: wrap;
+    }
+  
+    .navbar form {
+      flex-grow: 0;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .navbar form input {
+      width: 100%;
+    }
+  
+    /* LeftSidebar */
+    .left-sidebar {
+      padding: 10px;
+    }
+  
+    /* HomeMainbar */
+    .main-bar {
+      width: 100%;
+      padding: 0 10px;
+    }
+  
+    /* RightSidebar */
+    .right-sidebar {
+      padding: 10px;
+    }
+  
+    /* AskQuestion */
+    .ask-ques-container form .ask-form-container label input,
+    .ask-ques-container form .ask-form-container label textarea {
+      width: 100%;
+    }
+  
+    /* DisplayQuestion */
+    .question-details-page {
+      width: 100%;
+      padding: 0 10px;
+    }
+  
+    /* UserProfile */
+    .user-details-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .edit-profile-btn {
+      margin-top: 10px;
+    }
+  }
+  
+  /* Medium screens */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    /* Navbar */
+    .main-nav {
+      width: 90%;
+    }
+  
+    /* LeftSidebar */
+    .left-sidebar {
+      padding: 15px;
+    }
+  
+    /* HomeMainbar */
+    .main-bar {
+      width: calc(100% - 300px - 24px);
+    }
+  
+    /* RightSidebar */
+    .right-sidebar {
+      padding: 15px;
+    }
+  
+    /* AskQuestion */
+    .ask-ques-container form .ask-form-container label input,
+    .ask-ques-container form .ask-form-container label textarea {
+      width: 70%;
+    }
+  }
+  
+  /* Large screens */
+  @media (min-width: 992px) {
+    /* Navbar */
+    .main-nav {
+      width: 90%;
+    }
+  
+    /* LeftSidebar */
+    .left-sidebar {
+      padding: 20px;
+    }
+  
+    /* HomeMainbar */
+    .main-bar {
+      width: calc(100% - 300px - 24px);
+    }
+  
+  
+  }

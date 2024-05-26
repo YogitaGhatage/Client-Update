@@ -14,6 +14,22 @@
   box-sizing: border-box;
 }
 
+/* App.css */
+.App.morning {
+  background-color: #FAF5EF;
+  color: #333;
+}
+
+.App.afternoon {
+  background-color: #FAF1E6;
+  color: #333;
+}
+
+.App.evening {
+  background-color: #DDDDDD;
+  color: #333;
+}
+
 @media screen and (max-width: 760px) {
   .home-container-2 {
     max-width: 100%;

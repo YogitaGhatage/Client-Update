@@ -15,21 +15,9 @@ import Weather from "./pages/user-weather/weather";
 
 
 
+
 const AllRoutes = () => {
-  const [lati, setlati] = useState("10");
-  const [long, setlong] = useState("20");
-  const getLocation = () => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-      alert("Geolocation is not supported by this browser.");
-    }
-  };
-  const showPosition = (position) => {
-    setlati(position.coords.latitude);
-    setlong(position.coords.longitude);
-  };
-  getLocation();
+  
   return (
     <Routes>
       <Route  path='/' element={<Home/>} />
@@ -42,7 +30,7 @@ const AllRoutes = () => {
       <Route  path='/User/:id' element={<UserProfile />} />
       <Route
         path="/Weather"
-        element={<Weather latitude={lati} longitude={long}></Weather>}
+        element={<Weather/>}
       />
       <Route  path='/Public Space' element={<PublicSpace />} />
       

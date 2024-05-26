@@ -30,9 +30,14 @@ button[type="submit"] {
   margin-top: 20px;
 }
 
+/* Shared section styles */
+.shared-section {
+  margin-bottom: 20px;
+}
+
 /* Shared item styles */
 .shared-item {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -42,8 +47,7 @@ button[type="submit"] {
 img,
 video,
 audio {
-  height: 120;
-  max-width: 40%;
+  max-width: 100%;
   margin-top: 10px;
 }
 
@@ -57,6 +61,7 @@ audio {
   text-decoration: none;
   border-radius: 5px;
 }
+
 
 .popup-message {
   position: fixed;

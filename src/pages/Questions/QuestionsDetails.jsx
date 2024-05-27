@@ -20,7 +20,7 @@ const QuestionsDetails = () => {
   const dispatch = useDispatch();
   const User = useSelector((state) => state.currentUserReducer);
   const location = useLocation();
-  const url = "https://stackoverflow-backendagain-9zxt.onrender.com";
+  const url = "https://server-update-x85v.onrender.com";
 
   const handlePostAns = (e, answerLength) => {
     e.preventDefault();

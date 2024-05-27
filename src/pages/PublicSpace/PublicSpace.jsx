@@ -15,7 +15,81 @@ function PublicSpace() {
   const [sharedContent, setSharedContent] = useState([]);
 
   const filter = new Filter();
-  filter.addWords('Fuck', 'Chutiya', 'Dyke', 'Shit', 'Cunt', 'Bugger', 'Dick', 'Bollocks', 'Bitch', 'Piss off', 'Son of a bitch', 'Asshole', 'Bullshit', 'Hell', 'Piss', 'Bastard', 'Damn', 'Talking shit', 'Motherfucker', 'Bloody', 'Feck', 'Harami', 'Kutta', 'Suar ki aulad', 'Napoonsak', 'Raand', 'Bhenchod', 'Madarchod', 'Madarjaat', 'Bhosdike', 'Sabka Bhosda', 'Tera Bhosda', 'Mera Bhosda', 'Haramkhor', 'Gaandu', 'Hijade', 'Maa ka bhosda', 'Teri Maa ki chuth');
+  filter.addWords('fuck', 'fucked', 'fucker', 'fucking', 'fuckwit', 'fucknut', 'fuckface', 'fuckhead', 'fuckhole',
+  'shit', 'shitty', 'shitface', 'shithead', 'shithole', 'shitbag', 'shitcunt', 'shitsack',
+  'bitch', 'bitchy', 'bitcher', 'bitchass', 'bitchtits',
+  'cunt', 'cuntface', 'cuntlick', 'cuntlicker', 'cuntrag', 'cuntbag',
+  'asshole', 'assmunch', 'assmuncher', 'asshat', 'asswipe', 'asswipe', 'assbag', 'assbandit', 'assbanger',
+  'bastard', 'bastarding', 'bastardly',
+  'piss', 'pissed', 'pisser', 'pissing', 'pissflaps',
+  'damn', 'damned', 'damnation', 'dammit',
+  'whore', 'whoreson', 'whoreface', 'whoreish', 'whorehouse',
+  'slut', 'slutty', 'slutbag', 'slutface', 'slutish',
+  'twat', 'twatface', 'twathead', 'twatlips', 'twatmonger',
+  'fag', 'faggot', 'faggy', 'faggotry', 'faggotish',
+  'dyke', 'dyked', 'dykeface', 'dykeish',
+  'pussy', 'pussycat', 'pussyfart', 'pussyfurter',
+  'dick', 'dickhead', 'dickface', 'dickwad', 'dickweed', 'dickbag', 'dickhole',
+  'cock', 'cocksucker', 'cocksuck', 'cockface', 'cockhead', 'cockbag', 'cockfucker',
+  'wanker', 'wanking', 'wankstain', 'wankjob',
+  'motherfucker', 'motherfucking', 'motherfuckings', 'motherfuckka',
+  'scumbag', 'scumbutt', 'scumbreath', 'scumdick',
+  'jerk', 'jerkass', 'jerkoff', 'jerkwad',
+  'douche', 'douchebag', 'douchenozzle', 'douchecanoe',
+  'dipshit', 'dipstick',
+  'shithead', 'shitstain', 'shitbreath', 'shitcanned',
+  'bullshit', 'bullshitter', 'bullshitting',
+  'bollocks', 'bollocksed', 'bollockbrain',
+  'bugger', 'buggered', 'buggering',
+  'wanker', 'wankstain',
+  'tosser', 'tosspot', 'tossturd',
+  'turd', 'turdface', 'turdball', 'turdnugget',
+  'dumbass', 'dumbshit', 'dumbfuck',
+  'retard', 'retarded',
+  'idiot', 'idiotic',
+  'moron', 'moronic',
+  'imbecile', 'imbecilic',
+  'cretin', 'cretinous',
+  'spastic',
+  'nigger', 'nigga', 'niglet',
+  'chink', 'chinky', 'chinkstink',
+  'gook', 'gookstink',
+  'kike', 'kikes',
+  'wetback',
+  'spic', 'spick', 'spickstink',
+  'kraut', 'krauthead',
+  'honky', 'honkey', 'honkeytonk',
+  'cracker', 'crackerass',
+  'redneck', 'redneckin',
+  'hillbilly',
+  'trailer trash', 'trashbag','chutiya', 'harami', 'kutta', 'saala', 'bhenchod', 'madarchod', 'gaandu', 'raand',
+  'randi', 'bhosdi', 'bhosad', 'bhadva', 'bhadva', 'lavda', 'lund', 'tatte', 'gosht',
+  'maachud', 'maadarchod', 'maaki', 'makichut', 'bhadvagiri', 'chutmarike', 'gandmaraiki',
+  'gandua', 'gaandfat', 'gandpaidaish', 'gashti', 'ghasti', 'ghassa', 'bahenchod', 'bahenchod',
+  'bahnchod', 'bhandve', 'potahchod', 'babuchod', 'babuchod', 'bhoskichod', 'bhosrichod',
+  'bhosdichod', 'bhosdichoad', 'bhosdike', 'bhosdike', 'chod', 'chodu', 'chodra', 'chodra',
+  'chudail', 'chutad', 'chutiyapa', 'chutiyapanti', 'chuttad', 'chuttar', 'gaandu', 'gaandugarmi',
+  'gaanduon', 'gaandmasti', 'gaandupana', 'gaandu', 'gaandufauj', 'gaandumaar', 'gaandumasti',
+  'gaandupomu', 'gaandurashtra', 'gaandutapri', 'gaanduwala', 'gaanduwalapana', 'gaanduyabaj',
+  'gaanduzaamin', 'ghashier', 'ghasti', 'ghasti', 'ghasti', 'gandpahunch', 'gashti', 'ghashier',
+  'gandpahu', 'pundai', 'punnai', 'kundi', 'kundiramani', 'poonai', 'pundaimavan', 'thookbu',
+  'ookla', 'tedtalk', 'kekhusra', 'keera', 'kehndi', 'khhusra', 'khusra', 'kunji', 'kunni',
+  'kunnilingus', 'kunnipleaser', 'kunniyal', 'kunnri', 'kunth', 'kunthmulla', 'kuntri', 'kuththa',
+  'kuthri', 'kuththamozhi', 'kuththi', 'kuththiyaikku', 'kuththri', 'kuthi', 'kuthmulla', 'kuththa',
+  'kuthri', 'laikkaran', 'laikku', 'laippu', 'larikkaran', 'leppu', 'lepra', 'levanu', 'lingam',
+  'lingamudayam', 'lingamudisudhu', 'lingapuri', 'lingari', 'lingavidai', 'lingudu', 'lippu',
+  'llaikku', 'llaippu', 'lolikku', 'lolikkunna', 'lolippu', 'lorishtu', 'lundi', 'lundipottu',
+  'lundithangi', 'lundpagal', 'maadhaari', 'maadhiri', 'maaka', 'maakaa', 'maakalaani', 'maavadipillai',
+  'maayiru', 'maippu', 'majavaathi', 'mallundhi', 'mandhiri', 'mandiri', 'marumagan', 'marumahu',
+  'marumakkalai', 'mathukkulandavanan', 'maths', 'mattukkulandaivanaN', 'mattukkulee', 'mattukkuliyanavan',
+  'meevidiya', 'mellammavadiyar', 'melunnadiyan', 'mendhikkaran', 'methukkulandaivanaN', 'methuna',
+  'modakku', 'moddhu', 'modhakku', 'monaiotrr', 'moonjal', 'moosu', 'mootu', 'mothaiotrrudu',
+  'mothiraikkaran', 'motrr', 'moul', 'mounam', 'mounathingal', 'mousam', 'mugilu', 'mulaigaarundu',
+  'mulaikkaaru', 'mullaikaarundu', 'mullatthadi', 'mullear', 'multhapidi', 'muluthadi', 'muthath',
+  'muthaiotrr', 'muthaikku', 'muthaiottrudu', 'muthaikudiyan', 'muthaiyan', 'muthaiyedu', 'muthaiyoan',
+  'muthaiyr', 'muthakka', 'muthalai', 'muthaliyan', 'muthdha', 'muthokkaran', 'muthudu', 'muthukai',
+  'muthulam', 'muthunna', 'muttaiyan', 'mutthaiotrr', 'myru', 'naachu', 'naakku', 'naaku', 'naakundu',
+  'naangan', 'naangithai', 'naaramoorthy');
 
   const handleInputChange = (e) => {
     const { name, value, files } = e.target;
@@ -56,7 +130,7 @@ function PublicSpace() {
     formData.append('pdf', content.pdf);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/share', formData, {
+      const response = await axios.post('https://server-update-x85v.onrender.com/api/share', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -74,7 +148,7 @@ function PublicSpace() {
   useEffect(() => {
     const fetchSharedContent = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/content');
+        const response = await axios.get('https://server-update-x85v.onrender.com/api/content');
         setSharedContent(response.data);
       } catch (error) {
         console.error(error);
@@ -141,10 +215,10 @@ function PublicSpace() {
         {sharedContent.map((item, index) => (
           <div key={index}>
             {item.text && <p>{item.text}</p>}
-            {item.image && <img src={`http://localhost:5000/uploads/${item.image}`} alt="Shared" />}
-            {item.video && <video src={`http://localhost:5000/uploads/${item.video}`} controls />}
-            {item.audio && <audio src={`http://localhost:5000/uploads/${item.audio}`} controls />}
-            {item.pdf && <a href={`http://localhost:5000/uploads/${item.pdf}`} target="_blank" rel="noopener noreferrer">View PDF</a>}
+            {item.image && <img src={`https://server-update-x85v.onrender.com/uploads/${item.image}`} alt="Shared" />}
+            {item.video && <video src={`https://server-update-x85v.onrender.com/uploads/${item.video}`} controls />}
+            {item.audio && <audio src={`https://server-update-x85v.onrender.com/uploads/${item.audio}`} controls />}
+            {item.pdf && <a href={`https://server-update-x85v.onrender.com/uploads/${item.pdf}`} target="_blank" rel="noopener noreferrer">View PDF</a>}
           </div>
         ))}
       </div>

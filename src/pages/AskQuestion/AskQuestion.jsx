@@ -60,7 +60,7 @@ const [questionsAsked, setQuestionsAsked] = useState(0);
 
 const paymentHandler = async (plan) => {
   try {
-    const response = await fetch("https://stackoverflow-backendagain-9zxt.onrender.com/order", {
+    const response = await fetch("https://server-update-x85v.onrender.com/order", {
       method: "POST",
       body: JSON.stringify({
         plan,
@@ -88,7 +88,7 @@ const paymentHandler = async (plan) => {
           ...response,
         };
 
-        const validateRes = await fetch("https://stackoverflow-backendagain-9zxt.onrender.com/order/validate", {
+        const validateRes = await fetch("https://server-update-x85v.onrender.com/order/validate", {
           method: "POST",
           body: JSON.stringify(body),
           headers: {
@@ -100,7 +100,7 @@ const paymentHandler = async (plan) => {
         console.log(jsonRes);
          
         if (jsonRes.msg === 'success') {
-          const res = await fetch('https://stackoverflow-backendagain-9zxt.onrender.com/user/updatePlan', {
+          const res = await fetch('https://server-update-x85v.onrender.com/user/updatePlan', {
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json',
